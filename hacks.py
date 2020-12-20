@@ -15,7 +15,7 @@ def fix_marks(schoolkid_name):
 
 
 def remove_chastisements(schoolkid_name):
-    """Удалить всю замечания указанного ученика"""
+    """Удалить все замечания указанного ученика"""
     schoolkid = get_schoolkid(schoolkid_name)
     if schoolkid:
         chastisements = Chastisement.objects.filter(schoolkid=schoolkid)
